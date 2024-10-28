@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #212121
+}
+
+nav li img {
+    width: 100px;
+    height: 75px;
+}
