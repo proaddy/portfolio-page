@@ -7,22 +7,26 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body class="flex">
-    <div class="sidebar bg-gray-200 w-[15vw] min-w-[175px] h-[100vh] font-fira">
+    <div class="sidebar bg-gray-200 w-[15vw] min-w-[225px] h-[100dvh] font-fira absolute -translate-x-56 z-20 lg:relative lg:translate-x-0 lg:min-w-[175px]">
         <nav class="p-10">
             <li class="text-2xl list-none py-10"><a href="/public/index.html">Home</a></li>
             <li class="text-2xl list-none py-10"><a href="/public/pages/intro.html">My Intro</a></li>
-            <li class="text-2xl list-none py-10"><a href="/public/pages/contact.html">Contact Me</a></li>
+            <!-- <li class="text-2xl list-none py-10"><a href="/public/pages/contact.html">Contact Me</a></li> -->
             <li class="text-2xl list-none py-10"><a href="/public/pages/projects.html">Projects</a></li>
         </nav>
     </div>
     <div class="main w-[88vw]">
+        <div class="menu cursor-pointer">
+            <div id="ham" class="ham w-8 absolute left-3 top-3 lg:invisible"><img src="../images/ham_menu.png" alt=""></div>
+            <div id="cross" class="cross w-8 absolute left-3 top-3 invisible"><img src="../images/cross_menu.png" alt=""></div>
+        </div>
         <a class="infoContainer">
-            <h2 class="font-fira text-2xl m-8">About Me</h2>
-            <p class="font-source ml-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facilis officia, veritatis a dignissimos quisquam beatae. Consectetur excepturi aliquam iure similique, doloremque ad, quam voluptatibus labore blanditiis modi ab culpa tempora!</p>
-            <h2 class="font-fira text-2xl m-8">My Skills</h2>
-            <div class="SkillLanguage ml-12">
+            <h2 class="font-fira text-xl lg:text-2xl mt-20 mb-5 mx-10 lg:m-8">About Me</h2>
+            <p class="font-source ml-16 text-[15px] max-w-[950px]"> Recent graduate with a master's degree in Computer Application, possessing strong analytical and communication skills developed through academic projects. Passionate about web development and eager to contribute to a dynamic team environment. Seeking an opportunity to leverage my skills and education to positively impact a professional setting.</p>
+            <h2 class="font-fira text-xl lg:text-2xl mt-10 mb-5 mx-10 lg:m-8">My Skills</h2>
+            <div class="SkillLanguage ml-16 lg:ml-12">
                 <h2 class="font-fira my-3 text-xl">Languages</h2>
-                <div class="skillContainer ml-12">
+                <div class="skillContainer ml-6 lg:ml-12">
                     <div class="skillItem flex items-center">HTML: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
                     <div class="skillItem flex items-center">CSS: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
                     <div class="skillItem flex items-center">JavaScript: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
@@ -30,9 +34,9 @@
                     <div class="skillItem flex items-center">MongoDB: <div class="skill w-16 h-3 ml-3 bg-red-500 rounded-lg"> </div></div>
                 </div>
             </div>
-            <div class="skillFramework ml-12">
+            <div class="skillFramework ml-16 lg:ml-12">
                 <h2 class="font-fira my-3 text-xl">Frameworks</h2>
-                <div class="skillContainer ml-12">
+                <div class="skillContainer ml-6 lg:ml-12">
                     <div class="skillItem flex items-center">React.js: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
                     <div class="skillItem flex items-center">Tailwind CSS: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
                     <div class="skillItem flex items-center">Django: <div class="skill w-32 h-3 ml-3 bg-yellow-500 rounded-lg"> </div></div>
@@ -40,8 +44,9 @@
                     <div class="skillItem flex items-center">Node.js: <div class="skill w-16 h-3 ml-3 bg-red-500 rounded-lg"> </div></div>
                 </div>
             </div>
-            <a href="/public/pages/projects.html"><button class="border-black border rounded-3xl bg-blue-500 text-white p-1 px-3 mx-8 my-4 hover:bg-white hover:text-blue-500">See my Projects</button></a>
+            <a href="/public/pages/projects.html"><button class="border-black border rounded-3xl bg-blue-500 text-white py-1 px-2 mx-8 my-8 lg:py-2 lg:px-3 lg:font-bold hover:bg-white hover:text-blue-500">See my Projects</button></a>
         </div>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>

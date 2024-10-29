@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body class="flex">
-    <div class="sidebar bg-gray-200 w-[15vw] min-w-[175px] h-[100vh] font-fira">
+    <div class="sidebar bg-gray-200 w-[15vw] min-w-[225px] h-[100dvh] font-fira absolute -translate-x-56 z-20 lg:relative lg:translate-x-0 lg:min-w-[175px]">
         <nav class="p-10">
             <li class="text-2xl list-none py-10"><a href="/public/index.html">Home</a></li>
             <li class="text-2xl list-none py-10"><a href="/public/pages/intro.html">My Intro</a></li>
-            <li class="text-2xl list-none py-10"><a href="/public/pages/contact.html">Contact Me</a></li>
+            <!-- <li class="text-2xl list-none py-10"><a href="/public/pages/contact.html">Contact Me</a></li> -->
             <li class="text-2xl list-none py-10"><a href="/public/pages/projects.html">Projects</a></li>
         </nav>
     </div>
     <div class="main w-[88vw]">
-        <div class="projectContainer">
-            <h1 class="font-fira m-5 text-4xl">Projects made in the journey</h1>
+        <div class="menu cursor-pointer">
+            <div id="ham" class="ham w-8 absolute left-3 top-3 lg:invisible"><img src="../images/ham_menu.png" alt=""></div>
+            <div id="cross" class="cross w-8 absolute left-3 top-3 invisible"><img src="../images/cross_menu.png" alt=""></div>
+        </div>
+        <div class="projectContainer mt-16 md:ml-20 lg:mt-20 lg:ml-10">
+            <h1 class="font-fira m-5 text-2xl md:text-4xl">Projects made in the journey</h1>
             <div class="projectItem m-8 font-fira">
-                <h2 class="text-2xl">QuillLink - Note Taking App</h2>
-                <p class="font-source ml-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta facere sint fugiat dolorum obcaecati nobis in quaerat tempora nemo nisi autem, omnis sunt odio, officiis doloribus hic, sit molestiae distinctio consequuntur.</p>
-                <a href="#"><button class="border-black border rounded-3xl bg-blue-500 text-white px-3 py-1 mx-1 my-2 hover:bg-white hover:text-blue-500">Visit the project</button></a>
-            </div>
-            <div class="projectItem m-8 font-fira">
-                <h2 class="text-2xl">QuillLink - Note Taking App</h2>
-                <p class="font-source ml-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta facere sint fugiat dolorum obcaecati nobis in quaerat tempora nemo nisi autem, omnis sunt odio, officiis doloribus hic, sit molestiae distinctio consequuntur.</p>
-                <a href="#"><button class="border-black border rounded-3xl bg-blue-500 text-white px-3 py-1 mx-1 my-2 hover:bg-white hover:text-blue-500">Visit the project</button></a>
+                <h2 class="md:text-2xl my-2">QuillLink - Note Taking App</h2>
+                <p class="font-source ml-6 text-xs md:text-base">A Note-Taking application which was made to be simple place where users can take notes faster without anysetup or any process which can involve many steps. I has folder system for better organization of notes. Made using React.js for <em>Frontend</em> and Express.js for <em>Backend</em>. Design was made my me in figma before developing the application.</p>
+                <a href="https://quill-link.netlify.app/" target="_blank"><button class="border-black border rounded-3xl bg-blue-500 text-white px-1 text-xs py-1 my-4 md:text-base md:px-3 md:mx-1 md:my-2 hover:bg-white hover:text-blue-500">Visit the project</button></a>
             </div>
         </div>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>
