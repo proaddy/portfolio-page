@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="flex">
-    <div class="sidebar bg-gray-200 w-[12vw] h-[100vh] font-fira">
+    <div class="sidebar bg-gray-200 w-[15vw] min-w-[175px] h-[100vh] font-fira">
         <nav class="p-10">
             <li class="text-2xl list-none py-10"><a href="/public/index.html">Home</a></li>
             <li class="text-2xl list-none py-10"><a href="/public/pages/intro.html">My Intro</a></li>
-            <li class="text-2xl list-none py-10"><a href="/public/pages/contact.html">Contact</a></li>
+            <li class="text-2xl list-none py-10"><a href="/public/pages/contact.html">Contact Me</a></li>
             <li class="text-2xl list-none py-10"><a href="/public/pages/projects.html">Projects</a></li>
         </nav>
     </div>
-    <div class="w-[88vw]">
+    <div class="main w-[88vw]">
         <div class="infoContainer h-[60vh] w-[80vw] mx-auto mt-[140px] flex justify-around items-center">
             <div class="devInfo flex flex-col align-middle font-source gap-2">
                 <div class="hello text-5xl mb-1">Hey I am </div>
@@ -23,12 +23,12 @@
                 <div class="about text-3xl mb-1">Developer, Photo Editor, Web Designs</div>
                 <div class="about-more text-xl font-fira">I like to build websites and learn about programming, participate in coding challenges and work with a team on project</div>
                 <div class="buttons mt-2">
-                    <button class="border-black border rounded-3xl bg-blue-500 text-white text-xl font-bold px-3 py-1 mx-1 hover:bg-white hover:text-blue-500">Download CV</button>
-                    <button class="border-black border rounded-3xl bg-blue-500 text-white text-xl font-bold px-3 py-1 mx-1 hover:bg-white hover:text-blue-500">Contact Me</button>
+                    <a href="/public/src/cv.txt" target="_blank"><button class="border-black border rounded-3xl bg-blue-500 text-white text-xl font-bold px-3 py-1 mx-1 hover:bg-white hover:text-blue-500">Download CV</button></a>
+                    <a href="/public/pages/contact.html"><button class="border-black border rounded-3xl bg-blue-500 text-white text-xl font-bold px-3 py-1 mx-1 hover:bg-white hover:text-blue-500">Contact Me</button></a>
                 </div>
             </div>
             <div class="devPic">
-                <img src="/public/images/AVLOGONOGLOW.png" alt="myPic" class="w-[45rem]">
+                <img src="/public/images/AVLOGONOGLOW-sm.png" alt="myPic" class="w-[450px]">
             </div>
         </div>
     </div>

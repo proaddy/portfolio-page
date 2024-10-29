@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh Vishwakarma - Web Developer, Tech Enthusiast</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body class="flex">
-    <div class="sidebar bg-gray-200 w-[12vw] h-[100vh] font-fira">
+    <div class="sidebar bg-gray-200 w-[15vw] min-w-[175px] h-[100vh] font-fira">
         <nav class="p-10">
             <li class="text-2xl list-none py-10"><a href="/public/index.html">Home</a></li>
             <li class="text-2xl list-none py-10"><a href="/public/pages/intro.html">My Intro</a></li>
@@ -15,9 +15,33 @@
             <li class="text-2xl list-none py-10"><a href="/public/pages/projects.html">Projects</a></li>
         </nav>
     </div>
-    <div class="w-[88vw]">
-        <div class="infoContainer h-[60vh] w-[80vw] mx-auto mt-[140px] flex justify-around items-center">
-            
+    <div class="main w-[88vw]">
+        <div class="contactForm font-fira mt-36 h-[60vh] w-[80vw] mx-auto ">
+            <h1 class="font-source text-4xl my-2">Contact Me for further Enquiries</h1>
+            <form class="">
+                <div class="form-group flex flex-col">
+                  <label for="clientName" class="mt-5 mb-1">Name</label>
+                  <input type="email" class="w-[26vw] border border-black rounded-md p-1 px-4" id="clientName" aria-describedby="emailHelp"><br>
+                </div>
+                <div class="form-group flex flex-col">
+                  <label for="clientEmail" class="mt-5 mb-1">Email address</label>
+                  <input type="email" class="w-[26vw] border border-black rounded-md p-1 px-4" id="clientEmail" aria-describedby="emailHelp"><br>
+                  <small id="emailHelp" class="text-pink-600 ml-6">We'll never share your email & phone with anyone else.</small>
+                </div>
+                <div class="form-group flex flex-col">
+                  <label for="clientPhone" class="mt-3 mb-1">Phone</label>
+                  <input type="phone" class="w-[26vw] border border-black rounded-md p-1 px-4" id="clientPhone">
+                </div>
+                <div class="form-group flex flex-col">
+                  <label for="clientEnquiry" class="mt-5 mb-1">Enquiry for</label>
+                  <input type="phone" class="w-[26vw] border border-black rounded-md p-1 px-4" id="clientEnquiry">
+                </div>
+                <div class="form-check my-5">
+                  <input type="checkbox" class="form-check-input" id="isClient">
+                  <label class="form-check-label" for="isClient">I Want to work on project with you</label>
+                </div>
+                <button type="submit" class="border-black border rounded-3xl bg-blue-500 text-white text-xl font-bold px-4 py-2 mx-1 hover:bg-white hover:text-blue-500">Submit</button>
+            </form>
         </div>
     </div>
 </body>

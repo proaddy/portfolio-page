@@ -4,20 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh Vishwakarma - Web Developer, Tech Enthusiast</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body class="flex">
-    <div class="sidebar bg-gray-200 w-[12vw] h-[100vh] font-fira">
+    <div class="sidebar bg-gray-200 w-[15vw] min-w-[175px] h-[100vh] font-fira">
         <nav class="p-10">
             <li class="text-2xl list-none py-10"><a href="/public/index.html">Home</a></li>
             <li class="text-2xl list-none py-10"><a href="/public/pages/intro.html">My Intro</a></li>
-            <li class="text-2xl list-none py-10"><a href="/public/pages/contact.html">Contact</a></li>
+            <li class="text-2xl list-none py-10"><a href="/public/pages/contact.html">Contact Me</a></li>
             <li class="text-2xl list-none py-10"><a href="/public/pages/projects.html">Projects</a></li>
         </nav>
     </div>
-    <div class="w-[88vw]">
-        <div class="infoContainer h-[60vh] w-[80vw] mx-auto mt-[140px] flex justify-around items-center">
-            
+    <div class="main w-[88vw]">
+        <a class="infoContainer">
+            <h2 class="font-fira text-2xl m-8">About Me</h2>
+            <p class="font-source ml-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facilis officia, veritatis a dignissimos quisquam beatae. Consectetur excepturi aliquam iure similique, doloremque ad, quam voluptatibus labore blanditiis modi ab culpa tempora!</p>
+            <h2 class="font-fira text-2xl m-8">My Skills</h2>
+            <div class="SkillLanguage ml-12">
+                <h2 class="font-fira my-3 text-xl">Languages</h2>
+                <div class="skillContainer ml-12">
+                    <div class="skillItem flex items-center">HTML: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
+                    <div class="skillItem flex items-center">CSS: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
+                    <div class="skillItem flex items-center">JavaScript: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
+                    <div class="skillItem flex items-center">Python: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
+                    <div class="skillItem flex items-center">MongoDB: <div class="skill w-16 h-3 ml-3 bg-red-500 rounded-lg"> </div></div>
+                </div>
+            </div>
+            <div class="skillFramework ml-12">
+                <h2 class="font-fira my-3 text-xl">Frameworks</h2>
+                <div class="skillContainer ml-12">
+                    <div class="skillItem flex items-center">React.js: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
+                    <div class="skillItem flex items-center">Tailwind CSS: <div class="skill w-64 h-3 ml-3 bg-green-500 rounded-lg"> </div></div>
+                    <div class="skillItem flex items-center">Django: <div class="skill w-32 h-3 ml-3 bg-yellow-500 rounded-lg"> </div></div>
+                    <div class="skillItem flex items-center">Express.js: <div class="skill w-32 h-3 ml-3 bg-yellow-500 rounded-lg"> </div></div>
+                    <div class="skillItem flex items-center">Node.js: <div class="skill w-16 h-3 ml-3 bg-red-500 rounded-lg"> </div></div>
+                </div>
+            </div>
+            <a href="/public/pages/projects.html"><button class="border-black border rounded-3xl bg-blue-500 text-white p-1 px-3 mx-8 my-4 hover:bg-white hover:text-blue-500">See my Projects</button></a>
         </div>
     </div>
 </body>
